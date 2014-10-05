@@ -220,7 +220,7 @@ int GUIConsole::RenderConsole(void)
 		string curr_color = gConsoleColor[i];
 		int line_char_width;
 		for(;;) {
-			line_char_width = gr_maxExW(curr_line.c_str(), fontResource, mConsoleW);
+			line_char_width = 50;
 			if (line_char_width < curr_line.size()) {
 				rConsole.push_back(curr_line.substr(0, line_char_width));
 				rConsoleColor.push_back(curr_color);
